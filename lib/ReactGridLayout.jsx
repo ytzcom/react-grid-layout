@@ -384,9 +384,9 @@ export default class ReactGridLayout extends React.Component<Props, State> {
       : compact(layout, compactType(this.props), cols);
 
 
-    this.props.onDragStop(newLayout, oldDragItem, l, null, e, node);
-
     const newLayout = fillInGaps(compactedLayout, cols, fillGaps, lastRowGaps, gapFillHeight);
+
+    this.props.onDragStop(newLayout, oldDragItem, l, null, e, node);
 
     const { oldLayout } = this.state;
     this.setState({

@@ -204,7 +204,6 @@ class ReactGridLayout extends React.Component /*:: <Props, State>*/{
       // Set state
       const compactedLayout = allowOverlap ? layout : (0, _utils.compact)(layout, (0, _utils.compactType)(this.props), cols);
       const newLayout = (0, _utils.fillInGaps)(compactedLayout, cols, fillGaps, lastRowGaps, gapFillHeight);
-
       this.props.onDragStop(newLayout, oldDragItem, l, null, e, node);
       const {
         oldLayout

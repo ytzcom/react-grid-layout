@@ -1,3 +1,8 @@
+**Beacause we are not serving from NPM after making changes run `npm run build` and commit the build folder as well.
+
+Install via `npm install git+https://github.com/ytzcom/react-grid-layout#master`
+
+
 # React-Grid-Layout
 
 [![travis build](https://travis-ci.org/STRML/react-grid-layout.svg?branch=master)](https://travis-ci.org/STRML/react-grid-layout)
